@@ -29,6 +29,11 @@ public class User {
     @NonNull
     private String password;
 
+    /*
+    @DBRef annotation is used to define a reference to another document stored in a different collection —
+    similar to a foreign key in relational databases.
+    Instead of storing the full referenced document, MongoDB stores only a reference (usually the _id) to it.
+     */
     @DBRef
     List<JournalEntry> journalEntryList = new ArrayList<>();
 
