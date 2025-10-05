@@ -35,7 +35,9 @@ public class User {
     Instead of storing the full referenced document, MongoDB stores only a reference (usually the _id) to it.
      */
     @DBRef
-    List<JournalEntry> journalEntryList = new ArrayList<>();
+    private List<JournalEntry> journalEntryList = new ArrayList<>();
+
+    private List<String> roles;
 
 
 
