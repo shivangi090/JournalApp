@@ -3,6 +3,7 @@ package net.engineeringdigest.journalApp.entity;
  * Each user will have a UserName, Password and a ist of journal entries
  */
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.NonNull;
 import org.bson.types.ObjectId;
@@ -16,6 +17,7 @@ import java.util.List;
 
 @Data
 @Document(collection = "users")
+@Builder  //Lombok automatically generates a build class to set each field and a build() to create object
 public class User {
 
     @Id
