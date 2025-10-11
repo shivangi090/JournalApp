@@ -1,0 +1,27 @@
+on cmd
+mongosh
+show dbs
+use <dbname>
+show collections
+db.collection_name.find()
+
+Atlas credentials
+id = 998
+passwor - Shivangi@998
+
+DB credentials
+username - shivangiarora998_db_user
+password - xxXYtkaQDKHyIhWo
+Connection String - mongodb+srv://shivangiarora998_db_user:<db_password>@cluster0.lw5i6un.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+Cluster- is te group of nodes. local par ek instance hota hai. lekin cluster mein multiple servers par database present hota hai taki sharding ho sake and replication ho sake.
+
+Replication - aapka ek server ka data dusre mien bhi hoga
+sharding - data is stored in distributed manner/horizontal manner. Some data is stored in server A and some is stored in server B.
+Redis - cache - a connection to be established like mongo atlas
+
+
+Learning curve
+Spring Boot
+Rest APIs
+Spring Security - 
+Spring Testing - junit & Mockito
